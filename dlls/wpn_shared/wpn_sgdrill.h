@@ -57,7 +57,7 @@ public:
 #endif
 	}
 	KnockbackData GetKnockBackData() override { return { 750.0f, 550.0f, 650.0f, 500.0f, 0.4f }; }
-	const char *GetCSModelName() override { return "models/w_sgdrill.mdl"; }
+	const char *GetCSModelName() override { return "models/w_sgdrill2.mdl"; }
 public:
 	int m_iShell;
 
