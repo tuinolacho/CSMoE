@@ -36,7 +36,7 @@ void CSgdrill::Spawn(void)
 {
 	Precache();
 	m_iId = WEAPON_XM1014;
-	SET_MODEL(ENT(pev), "models/w_sgdrill.mdl");
+	SET_MODEL(ENT(pev), "models/w_sgdrill2.mdl");
 
 	m_iDefaultAmmo = SGDRILL_DEFAULT_GIVE;
 
@@ -45,12 +45,12 @@ void CSgdrill::Spawn(void)
 
 void CSgdrill::Precache(void)
 {
-	PRECACHE_MODEL("models/v_sgdrill.mdl");
-	PRECACHE_MODEL("models/w_sgdrill.mdl");
-	PRECACHE_MODEL("models/p_sgdrill.mdl");
+	PRECACHE_MODEL("models/v_sgdrill2.mdl");
+	PRECACHE_MODEL("models/w_sgdrill2.mdl");
+	PRECACHE_MODEL("models/p_sgdrill2.mdl");
 	PRECACHE_MODEL("models/p_sgdrill_slash.mdl");
 
-	m_iShellId = m_iShell = PRECACHE_MODEL("models/shell_sgdrill.mdl");
+	m_iShellId  =  m_iShell  =  PRECACHE_MODEL ( "mô hình / shell_sgdrill2.mdl" );
 
 	PRECACHE_SOUND("weapons/sgdrill-1.wav");
 	PRECACHE_SOUND("weapons/sgdrill_clipin.wav");
@@ -215,7 +215,7 @@ void CSgdrill::ItemPostFrame()
 {
 	if (m_flNextResetModel <= gpGlobals->time)
 	{
-		m_pPlayer->pev->weaponmodel = MAKE_STRING("models/p_sgdrill.mdl");
+		m_pPlayer->pev->weaponmodel = MAKE_STRING("models/p_sgdrill2.mdl");
 	}
 	return CBasePlayerWeapon::ItemPostFrame();
 }
