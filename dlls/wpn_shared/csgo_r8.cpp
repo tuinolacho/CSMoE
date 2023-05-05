@@ -289,7 +289,7 @@ float CR8::GetDamage(BOOL fIsModeA)
 	}
 	else
 	{
-		flDamage = 86.0f;
+		flDamage = 109.0f;
 #ifndef CLIENT_DLL
 		if (g_pModRunning->DamageTrack() == DT_ZB)
 			flDamage = 109.0f;
